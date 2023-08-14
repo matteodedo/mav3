@@ -18,6 +18,9 @@ model-viewer {
   height: 90%;
   background-color: #ffffff;
 }
+.piazzadiv {
+  text-align: center;
+}
 
 .Hotspot {
   background: #fff;
