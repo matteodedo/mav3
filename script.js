@@ -12,38 +12,38 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 //nascondo immagini
-document.getElementById("myImg").style.visibility = "hidden";
+document.getElementById("HotspotAnnotation").style.visibility = "hidden";
 
 
 
 function hideElem() {
-    document.getElementById("myImg").style.visibility = "hidden"; 
-    document.getElementById("myImg2").style.visibility = "hidden";
-    document.getElementById("myImg3").style.visibility = "hidden"; 
-    document.getElementById("myImg4").style.visibility = "hidden"; 
+    document.getElementById("piazza").style.visibility = "hidden"; 
+    document.getElementById("cima").style.visibility = "hidden";
+    document.getElementById("yale").style.visibility = "hidden"; 
+    document.getElementById("campon").style.visibility = "hidden"; 
 }
 
 function piazza() {
-    document.getElementById("myImg").style.visibility = "visible"; 
-    document.getElementById("myImg2").style.visibility = "hidden";
-    document.getElementById("myImg3").style.visibility = "hidden"; 
-    document.getElementById("myImg4").style.visibility = "hidden";
+    document.getElementById("piazza").style.visibility = "visible";
+    document.getElementById("cima").style.visibility = "hidden";
+    document.getElementById("yale").style.visibility = "hidden"; 
+    document.getElementById("campon").style.visibility = "hidden";
 }
 function cimaloreto() {
-    document.getElementById("myImg").style.visibility = "hidden"; 
-    document.getElementById("myImg2").style.visibility = "visible";
-    document.getElementById("myImg3").style.visibility = "hidden"; 
-    document.getElementById("myImg4").style.visibility = "hidden";
+    document.getElementById("piazza").style.visibility = "hidden"; 
+    document.getElementById("cima").style.visibility = "visible";
+    document.getElementById("yale").style.visibility = "hidden"; 
+    document.getElementById("campon").style.visibility = "hidden";
 }
 function yale() {
-    document.getElementById("myImg").style.visibility = "hidden"; 
-    document.getElementById("myImg2").style.visibility = "hidden";
-    document.getElementById("myImg3").style.visibility = "visible"; 
-    document.getElementById("myImg4").style.visibility = "hidden";
+    document.getElementById("piazza").style.visibility = "hidden"; 
+    document.getElementById("cima").style.visibility = "hidden";
+    document.getElementById("yale").style.visibility = "visible"; 
+    document.getElementById("campon").style.visibility = "hidden";
 }
 function campon() {
-    document.getElementById("myImg").style.visibility = "hidden"; 
-    document.getElementById("myImg2").style.visibility = "hidden";
-    document.getElementById("myImg3").style.visibility = "hidden"; 
-    document.getElementById("myImg4").style.visibility = "visible";
+    document.getElementById("piazza").style.visibility = "hidden"; 
+    document.getElementById("cima").style.visibility = "hidden";
+    document.getElementById("yale").style.visibility = "hidden"; 
+    document.getElementById("campon").style.visibility = "visible";
 }
