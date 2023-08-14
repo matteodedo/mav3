@@ -68,7 +68,7 @@ model-viewer {
   left: calc(100% + 1em);
   
   overflow-wrap: break-word;
-  padding: 500%;
+  padding: 250%;
   position: absolute;
   
   
