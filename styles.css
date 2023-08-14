@@ -31,6 +31,7 @@ model-viewer {
   position: relative;
   transition: opacity 0.3s;
   width: 24px;
+  
 }
 
 .Hotspot:not([data-visible]) {
@@ -70,7 +71,10 @@ model-viewer {
   position: absolute;
   top: 50%;
   width: max-content;
+  visibility: hidden
+  
 }
+
 
 .Hotspot:not([data-visible]) > * {
   opacity: 0;
@@ -94,7 +98,9 @@ model-viewer {
   border: 1px solid rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+img.hidden {  
+  display: none;  
+} 
 .progress-bar.hide {
   visibility: hidden;
   transition: visibility 0.3s;

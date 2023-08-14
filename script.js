@@ -11,3 +11,15 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+//nascondo immagini
+document.getElementById("myImg").style.visibility = "hidden";
+
+
+
+function hideElem() {
+  document.getElementById("myImg").style.visibility = "hidden"; 
+}
+
+function showElem() {
+  document.getElementById("myImg").style.visibility = "visible"; 
+}
