@@ -1,24 +1,51 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>&lt;model-viewer&gt; template</title>
+    <title>&lt;MonteAvenaVertical&gt; template</title>
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
+      <script src="script.js"></script>
   </head>
   <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="mavERTI (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="monte_avena_vertical_2023.png" skybox-image="monte_avena_vertical_2023.png">
-      <button class="Hotspot" slot="hotspot-1" data-position="-1479.5095750521696m 10.345412707652258m 1962.940630392423m" data-normal="-0.28409794670238814m 9.362710181313636e-12m 0.9587952631711774m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">partenza</div>
-      </button><button class="Hotspot" slot="hotspot-4" data-position="-2354.6409230580175m 540.6048835009661m 649.7556788010351m" data-normal="-0.6031418712746983m 7.788957231657018e-12m 0.7976339280116258m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">cima loreto</div>
-      </button><button class="Hotspot" slot="hotspot-5" data-position="-1406.7039840076402m 766.3738454478251m 281.18065720091505m" data-normal="-0.045336718520446836m 0.9820969102793206m 0.18283938518166676m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">yale</div>
-      </button><button class="Hotspot" slot="hotspot-6" data-position="31.37346964734911m 1099.9806183004773m -20.48308702017558m" data-normal="-0.021807501400762565m 0.9994607385146067m -0.024549237269067783m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">campon</div>
+        <script src="script.js"></script>
+             <div  style="position: absolute; z-index:500; ; width:100%" class="galleria">
+     <div style="position:relative; left:50%;">
+         <img id="myImg" src="piazza.jpg" width=50% style="position:absolute" >
+     </div> 
+    </div>
+      
+    <model-viewer style="display: block; position: absolute; z-index:2" src="mavERTI (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="monte_avena_vertical_2023.png" skybox-image="monte_avena_vertical_2023.png" >
+      <button class="Hotspot" slot="hotspot-1" data-position="-1479.5095750521696m 0.345412707652258m 1962.940630392423m" data-normal="-0.28409794670238814m 9.362710181313636e-12m 0.9587952631711774m" data-visibility-attribute="visible" onclick="piazza()">
+           <script src="script.js"></script>
+          <div id= "piazza" class="HotspotAnnotation" style="background: url(piazza.jpg) center / cover no-repeat; width:100%;">
+          <div class="scritta">Piazza
+              </div>
+              
+          </div>
+           
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-2354.6409230580175m 540.6048835009661m 649.7556788010351m" data-normal="-0.6031418712746983m 7.788957231657018e-12m 10.7976339280116258m" data-visibility-attribute="visible" onclick="cimaloreto()">
+          <div id="cima" class="HotspotAnnotation" style="background: url(cimaloreto.jpg) center / cover no-repeat; width:100%;" >
+         <div class="scritta">Cima Loreto
+              </div>
+        </div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="-1406.7039840076402m 766.3738454478251m 281.18065720091505m" data-normal="-0.045336718520446836m 0.9820969102793206m 0.18283938518166676m" data-visibility-attribute="visible" onclick="yale()">
+          <div id="yale" class="HotspotAnnotation" style="background: url(yale.jpg) center / cover no-repeat; width:100%;">
+         <div class="scritta">Yale
+              </div>
+        </div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="31.37346964734911m 1099.9806183004773m -20.48308702017558m" data-normal="-0.021807501400762565m 0.9994607385146067m -0.024549237269067783m" data-visibility-attribute="visible" onclick="campon()">
+          <div id="campon" class="HotspotAnnotation" style="background: url(campon.jpg) center / cover no-repeat; width:100%;">
+         <div class="scritta">Campon
+              </div>
+        </div>
       </button>
+        </hr>
+        
+      <label id="content1" for="hotspots1" class="content1" style="position:absolute; visibility:visible">
+        <div style="background: url(piazza.jpg) center / cover no-repeat; padding-bottom: 40%; width:50%; "></div>
+      </label>
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -28,9 +55,17 @@
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
+      
     </model-viewer>  
+
+      
+          
+      
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js">
+    
+      </script>
+      
   </body>
 </html>
