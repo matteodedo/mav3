@@ -47,3 +47,23 @@ function campon() {
     document.getElementById("yale").style.visibility = "hidden"; 
     document.getElementById("campon").style.visibility = "visible";
 }
+//-----------------------------------------------------------------------
+function gal_piazza() {
+    document.getElementById("gal_piazza").style.visibility = "visible"; 
+}
+function gal_cima() {
+    document.getElementById("gal_cima").style.visibility = "visible"; 
+}
+function gal_yale() {
+    document.getElementById("gal_yale").style.visibility = "visible"; 
+}
+function gal_campon() {
+    document.getElementById("gal_campon").style.visibility = "visible"; 
+}
+function nascondi() {
+    document.getElementById("gal_piazza").style.visibility = "hidden"; 
+    document.getElementById("gal_cima").style.visibility = "hidden";
+    document.getElementById("gal_yale").style.visibility = "hidden";
+    document.getElementById("gal_campon").style.visibility = "hidden";
+}
+
